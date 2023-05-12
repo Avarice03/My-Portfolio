@@ -1,0 +1,43 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #efefef;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section.home {
+  background-color: #212a3e;
+}
+
+.section.skills {
+  background-color: #394867;
+}
+
+.section.projects {
+  background-color: #f1f6f9;
+}
+
+.section.contact {
+  background-color: #9ba4b5;
+}
