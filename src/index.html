@@ -34,6 +34,7 @@
               teal: "#00adb5",
               grey: "#eeeeee",
               navbarbg: "rgb(34, 40, 49, 0.9)",
+              subtle: "rgb(34, 40, 49, 0.7)",
             },
             fontFamily: {
               montserrat: ["Montserrat", "sans-serif"],
@@ -299,7 +300,9 @@
         </div>
       </div>
       <div class="section projects" data-anchor="projectsSection">
-        <div class="slide"><h2>Projects</h2></div>
+        <div class="slide">
+          <h2 class="text-teal text-7xl md:text-9xl py-5">Projects</h2>
+        </div>
         <div class="slide"><h1>Project 1</h1></div>
         <div class="slide"><h1>Project 2</h1></div>
         <div class="slide"><h1>Project 3</h1></div>
@@ -313,62 +316,158 @@
         class="section footer global-footer-container fp-auto-height"
         data-anchor="footerSection"
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas similique
-        perspiciatis laudantium natus labore aperiam minima beatae rem officia
-        illo?
-        <div class="references">
-          <a target="_blank" href="https://icons8.com/icon/20906/git">Git</a>,
-          <a target="_blank" href="https://icons8.com/icon/P7UIlhbpWzZm/gmail"
-            >Gmail</a
+        <div class="flex justify-center md:justify-center my-5 gap-5">
+          <a
+            class="grayscale hover:grayscale-0 transition duration-500"
+            href="mailto:dmendegorin@gmail.com"
+            target="_blank"
+            rel="noreferrer"
           >
-          <a target="_blank" href="https://icons8.com/icon/34886/gitlab"
-            >Gitlab</a
+            <img alt="email icon" src="./assets/images/gmail.png" />
+          </a>
+          <a
+            class="grayscale hover:grayscale-0 transition duration-500"
+            href="https://www.linkedin.com/in/daniel-edison-mendegorin-5b13a8247/"
+            target="_blank"
+            rel="noreferrer"
           >
-          <a target="_blank" href="https://icons8.com/icon/13930/linkedin"
-            >LinkedIn</a
+            <img alt="linkedin icon" src="./assets/images/linkedin.png" />
+          </a>
+          <a
+            class="grayscale hover:grayscale-0 transition duration-500"
+            href="https://github.com/Avarice03"
+            target="_blank"
+            rel="noreferrer"
           >
-          <a target="_blank" href="https://icons8.com/icon/74402/mongodb"
-            >MongoDB</a
+            <img alt="github icon" src="./assets/images/github.png" />
+          </a>
+          <a
+            class="grayscale hover:grayscale-0 transition duration-500"
+            href="https://gitlab.com/dmendegorin"
+            target="_blank"
+            rel="noreferrer"
           >
-          <a target="_blank" href="https://icons8.com/icon/hsPbhkOH4FMe/node-js"
-            >Node Js</a
-          >
-          <a target="_blank" href="https://icons8.com/icon/NfbyHexzVEDk/react"
-            >React</a
-          >
-          <a target="_blank" href="https://icons8.com/icon/20909/html-5"
-            >HTML</a
-          >
-          <a target="_blank" href="https://icons8.com/icon/21278/css3">CSS</a>
-          <a target="_blank" href="https://icons8.com/icon/108784/javascript"
-            >JavaScript</a
+            <img alt="gitlab icon" src="./assets/images/gitlab.png" />
+          </a>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="h-0.5 w-4/5 lg:w-2/5 bg-teal"></div>
+        </div>
+        <div class="flex justify-center mt-5 mb-5">
+          <p>© 2023 Daniel Mendegorin All Rights Reserved</p>
+        </div>
+        <div class="references flex flex-wrap justify-center">
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/20906/git"
+            >Git, &nbsp;</a
           >
           <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/P7UIlhbpWzZm/gmail"
+            >Gmail, &nbsp;</a
+          >
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/34886/gitlab"
+            >Gitlab, &nbsp;</a
+          >
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/13930/linkedin"
+            >LinkedIn, &nbsp;</a
+          >
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/74402/mongodb"
+            >MongoDB, &nbsp;</a
+          >
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/hsPbhkOH4FMe/node-js"
+            >Node Js, &nbsp;</a
+          >
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/NfbyHexzVEDk/react"
+            >React, &nbsp;</a
+          >
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/20909/html-5"
+            >HTML, &nbsp;</a
+          >
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/21278/css3"
+            >CSS</a
+          >
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/108784/javascript"
+            >JavaScript,&nbsp;</a
+          >
+          <a
+            class="text-sm text-muted"
             target="_blank"
             href="https://icons8.com/icon/gFw7X5Tbl3ss/material-ui"
-            >Material Ui</a
-          >
-          <a target="_blank" href="https://icons8.com/icon/84710/bootstrap"
-            >Bootstrap</a
+            >Material Ui,&nbsp;</a
           >
           <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/84710/bootstrap"
+            >Bootstrap, &nbsp;</a
+          >
+          <a
+            class="text-sm text-muted"
             target="_blank"
             href="https://icons8.com/icon/x7XMNGh2vdqA/tailwind-css"
-            >Tailwind CSS</a
+            >Tailwind CSS, &nbsp;</a
           >
-          <a target="_blank" href="https://icons8.com/icon/13441/python"
-            >Python</a
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/13441/python"
+            >Python, &nbsp;</a
           >
-          <a target="_blank" href="https://icons8.com/icon/121103/visual-basic"
-            >Visual Basic</a
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/121103/visual-basic"
+            >Visual Basic, &nbsp;</a
           >
-          <a target="_blank" href="https://icons8.com/icon/44328/c%2B%2B"
-            >C++</a
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/44328/c%2B%2B"
+            >C++, &nbsp;</a
           >
-          <a target="_blank" href="https://icons8.com/icon/r5Y16PcDkoWI/matlab"
-            >MATLAB</a
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/r5Y16PcDkoWI/matlab"
+            >and MATLAB&nbsp;</a
           >
-          icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com"
+          >
+            icons by&nbsp;Icons8</a
+          >
         </div>
       </div>
     </div>

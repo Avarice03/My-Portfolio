@@ -8,62 +8,15 @@ body {
   font-family: Roboto, "sans-serif";
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-/* h1 {
-  font-family: Montserrat, "sans-serif";
-  font-size: 40px;
-}
-
-h2 {
-  font-family: Montserrat, "sans-serif";
-  font-size: 32px;
-}
-
-h3 {
-  font-family: Montserrat, "sans-serif";
-  font-size: 24px;
-}
-
-h4 {
-  font-family: Montserrat, "sans-serif";
-  font-size: 20px;
-}
-
-h5 {
-  font-family: Montserrat, "sans-serif";
-  font-size: 16px;
-}
-
-h6 {
-  font-family: Montserrat, "sans-serif";
-  font-size: 14px;
-} */
-.container {
-  /* width: 100%;
-  height: 100%; */
-}
-
-.section {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* width: 100vw;
-  height: 100vh; */
+.references a {
+  color: #94a3b8;
 }
 
 .slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100vw;
-  height: 100vh; */
 }
-
 /* HOME */
 .section.home {
   background-color: #222831;
@@ -79,11 +32,6 @@ h6 {
   background-color: #222831;
 }
 
-.projects h2 {
-  color: #00adb5;
-  font-size: 150px;
-}
-
 /* CONTACT */
 .section.contact {
   background-color: #eeeeee;
@@ -93,5 +41,5 @@ h6 {
 .section.footer {
   background-color: #222831;
   width: 100%;
-  padding: 100px;
+  padding: 40px;
 }
