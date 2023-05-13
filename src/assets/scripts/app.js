@@ -23,7 +23,7 @@ menuButton.addEventListener("click", Menu);
 
 function Menu(e) {
   let list = document.querySelector("ul");
-  if (this.name === "menu"){
+  if (this.name === "menu") {
     this.name = "close";
     list.classList.add("top-[64px]");
     list.classList.add("opacity-100");
