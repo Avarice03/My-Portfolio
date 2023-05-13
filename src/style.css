@@ -1,14 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
 body {
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
+  @apply text-white;
+}
+
+/* * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* PALETTE */
+/* primary: 222831
+secondary: 393e46
+tealAccent: 00adb5
+grey:  eeeeee */
+
+body {
+  /* width: 100vw;
+  height: 100vh; */
   background-color: #e0e0e0;
   font-family: Roboto, "sans-serif";
 }
 
-h1 {
+/* h1 {
   font-family: Montserrat, "sans-serif";
   font-size: 40px;
 }
@@ -36,40 +57,56 @@ h5 {
 h6 {
   font-family: Montserrat, "sans-serif";
   font-size: 14px;
-}
+} */
 .container {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
 }
 
 .section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 .slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
+/* HOME */
 .section.home {
-  background-color: #212a3e;
+  background-color: #222831;
 }
 
+/* SKILLS */
 .section.skills {
-  background-color: #394867;
+  background-color: #eeeeee;
 }
 
+/* PROJECTS */
 .section.projects {
-  background-color: #f1f6f9;
+  background-color: #222831;
 }
 
+.projects h2 {
+  color: #00adb5;
+  font-size: 150px;
+}
+
+/* CONTACT */
 .section.contact {
-  background-color: #9ba4b5;
+  background-color: #eeeeee;
+}
+
+/* FOOTER */
+.section.footer {
+  background-color: #222831;
+  width: 100%;
+  padding: 100px;
 }

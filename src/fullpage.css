@@ -83,7 +83,7 @@ html.fp-enabled,
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  left: 10;
+  left: 15;
   border: none;
   width: 50px;
   height: 50px;
@@ -96,12 +96,20 @@ html.fp-enabled,
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  right: 20;
+  right: 15;
   border: none;
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+  .fp-arrow.fp-prev,
+  .fp-arrow.fp-next {
+    background-image: none;
+  }
+}
+
 .fp-notransition {
   -webkit-transition: none !important;
   transition: none !important;
