@@ -2,11 +2,11 @@ new fullpage("#fullpage", {
   //options here
 
   anchors: [
-    "homeSection",
-    "skillsSection",
-    "projectsSection",
-    "contactSection",
-    "footerSection",
+    "home",
+    "skills",
+    "projects",
+    "contact",
+    "footer",
   ],
   autoScrolling: true,
   scrollHorizontally: true,

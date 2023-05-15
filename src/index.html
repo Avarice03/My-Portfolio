@@ -8,6 +8,10 @@
     <title>Mendegorin Portfolio</title>
     <link rel="stylesheet" href="./style.css" async />
     <link rel="stylesheet" href="./fullpage.css" async />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
     <style type="text/tailwindcss">
       @tailwind base;
       @tailwind components;
@@ -72,28 +76,28 @@
         >
           <li class="mx-4 my-6 md:my-0 flex justify-end">
             <a
-              href="#homeSection"
+              href="#about"
               class="text-xl hover:text-cyan-500 duration-500 font-montserrat"
               >About</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0 flex justify-end">
             <a
-              href="#skillsSection"
+              href="#skills"
               class="text-xl hover:text-cyan-500 duration-500 font-montserrat"
               >Skills</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0 flex justify-end">
             <a
-              href="#projectsSection"
+              href="#projects"
               class="text-xl hover:text-cyan-500 duration-500 font-montserrat"
               >Projects</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0 flex justify-end">
             <a
-              href="#contactSection"
+              href="#contact"
               class="text-xl hover:text-cyan-500 duration-500 font-montserrat"
               >Contact</a
             >
@@ -102,7 +106,7 @@
       </div>
     </nav>
     <div id="fullpage">
-      <div class="section home py-10" data-anchor="homeSection">
+      <div class="section home py-10" data-anchor="about">
         <div
           class="md:flex md:justify-between md:items-center md:h-full gap-12 md:gap-0 w-5/6 mx-auto"
         >
@@ -198,7 +202,7 @@
           </div>
         </div>
       </div>
-      <div class="section skills" data-anchor="skillsSection">
+      <div class="section skills" data-anchor="skills">
         <div class="h-full">
           <h2
             class="flex justify-center font-montserrat text-teal text-5xl md:text-7xl font-semibold py-5"
@@ -210,111 +214,679 @@
           </div>
           <!-- Skill Icons -->
           <div class="flex-col mt-20">
-            <div class="flex justify-center items-center gap-0 md:gap-10">
+            <div class="flex justify-center items-center gap-10 md:gap-10">
               <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
+                data-tooltip-target="react-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
                 alt="react icon"
                 src="./assets/images/react.png"
               />
-            </div>
-            <div class="flex justify-center items-center gap-0 md:gap-5">
+              <div
+                id="react-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                React
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
               <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="node icon"
+                data-tooltip-target="mongodb-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="mongodb icon"
                 src="./assets/images/mongodb.png"
               />
+              <div
+                id="mongodb-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                MongoDB
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
               <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="mongodb icon"
+                data-tooltip-target="node-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="nodejs icon"
                 src="./assets/images/nodejs.png"
               />
+              <div
+                id="node-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                Node JS
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
             </div>
-            <div class="flex justify-center items-center gap-0 md:gap-5">
+            <div class="flex justify-center items-center gap-10 md:gap-10">
               <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="html icon"
-                src="./assets/images/html.png"
-              />
-              <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
+                data-tooltip-target="express-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
                 alt="express icon"
                 src="./assets/images/expressjs.png"
               />
+              <div
+                id="express-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                Express JS
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
               <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="js icon"
-                src="./assets/images/javascript.png"
-              />
-            </div>
-            <div class="flex justify-center items-center gap-0 md:gap-5">
-              <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="bootstrap icon"
-                src="./assets/images/bootstrap.png"
-              />
-              <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="css icon"
-                src="./assets/images/css.png"
-              />
-              <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="mui icon"
-                src="./assets/images/mui.png"
-              />
-              <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="tailwind icon"
-                src="./assets/images/tailwind.png"
-              />
-            </div>
-            <div class="flex justify-center items-center gap-0 md:gap-5">
-              <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="visual basic icon"
-                src="./assets/images/visualbasic.png"
-              />
-              <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
+                data-tooltip-target="git-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
                 alt="git icon"
                 src="./assets/images/git.png"
               />
+              <div
+                id="git-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                Git
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-10 md:gap-10">
               <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="python icon"
-                src="./assets/images/python.png"
+                data-tooltip-target="html-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="html icon"
+                src="./assets/images/html.png"
               />
+              <div
+                id="html-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                HTML
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+              <img
+                data-tooltip-target="css-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="css icon"
+                src="./assets/images/css.png"
+              />
+              <div
+                id="css-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                CSS
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+              <img
+                data-tooltip-target="javascript-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="js icon"
+                src="./assets/images/javascript.png"
+              />
+              <div
+                id="javascript-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                Javascript
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-10 md:gap-10">
+              <img
+                data-tooltip-target="bootstrap-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="bootstrap icon"
+                src="./assets/images/bootstrap.png"
+              />
+              <div
+                id="bootstrap-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                Bootstrap
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+              <img
+                data-tooltip-target="tailwind-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="tailwind icon"
+                src="./assets/images/tailwind.png"
+              />
+              <div
+                id="tailwind-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                Tailwind CSS
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-10 md:gap-10">
+              <img
+                data-tooltip-target="vb-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="visual basic icon"
+                src="./assets/images/visualbasic.png"
+              />
+              <div
+                id="vb-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                Visual Basic
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
 
               <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
-                alt="matlab icon"
-                src="./assets/images/matlab.png"
+                data-tooltip-target="mui-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="mui icon"
+                src="./assets/images/mui.png"
               />
+              <div
+                id="mui-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                Material UI
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
               <img
-                class="w-full max-w-[70px] md:max-w-[96px]"
+                data-tooltip-target="c++-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
                 alt="c++ icon"
                 src="./assets/images/c++.png"
               />
+              <div
+                id="c++-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                C++
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-10 md:gap-10">
+              <img
+                data-tooltip-target="python-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="python icon"
+                src="./assets/images/python.png"
+              />
+              <div
+                id="python-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                Python
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+
+              <img
+                data-tooltip-target="matlab-hover"
+                data-tooltip-trigger="hover"
+                class="w-full max-w-[70px] md:max-w-[96px] cursor-pointer"
+                alt="matlab icon"
+                src="./assets/images/matlab.png"
+              />
+              <div
+                id="matlab-hover"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+              >
+                Matlab
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section projects" data-anchor="projectsSection">
+      <!-- Projects -->
+      <div class="section projects" data-anchor="projects">
         <div class="slide">
           <h2 class="text-teal text-7xl md:text-9xl py-5">Projects</h2>
         </div>
-        <div class="slide"><h1>Project 1</h1></div>
-        <div class="slide"><h1>Project 2</h1></div>
-        <div class="slide"><h1>Project 3</h1></div>
+        <div class="slide">
+          <!-- Carnielval -->
+          <div
+            class="lg:flex lg:justify-between lg:items-center lg:h-full gap-12 lg:gap-10 w-5/6 mx-auto"
+          >
+            <!-- Image -->
+            <div class="flex justify-center basis-3/5">
+              <img
+                class="w-full max-w-[400px] md:max-w-[1000px] border-2 border-cyan-500"
+                alt="carnielval app preview"
+                src="./assets/images/carnielval.png"
+              />
+            </div>
+            <!-- Content -->
+            <div class="basis-2/5 flex justify-start mt-8">
+              <div class="w-full lg:w-4/5">
+                <p
+                  class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat text-center lg:text-start"
+                >
+                  Carnielval
+                </p>
+                <p
+                  class="mt-5 mb-7 text-sm text-center lg:text-start text-grey"
+                >
+                  Carnielval is an engaging JavaScript game app offering two
+                  exciting games: Rock Paper Scissors and Color game. Players
+                  start with 1000 Niels and aim to multiply their winnings
+                  tenfold through strategic gameplay and skillful
+                  decision-making. Prepare for an immersive experience as you
+                  strive to achieve the ultimate goal of accumulating
+                  substantial wealth in this thrilling gaming adventure.
+                </p>
+                <!-- Dev tools badges -->
+                <div
+                  class="flex justify-center lg:justify-start my-5 gap-1 flex-wrap"
+                >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >HTML</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >CSS</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >Javascript</span
+                  >
+                </div>
+                <!-- Action Buttons -->
+                <div class="flex justify-center lg:justify-start gap-3">
+                  <button
+                    class="bg-teal hover:bg-transparent text-white font-semibold hover:text-teal py-2 px-4 border border-teal hover:border-teal rounded inline-flex items-center"
+                  >
+                    <img
+                      class="h-auto max-w-[25px] mr-1 grayscale"
+                      alt="external link icon"
+                      src="./assets/images/external-link.png"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://avarice03.github.io/carnielval-game/"
+                    >
+                      View Website
+                    </a>
+                  </button>
+                  <button
+                    class="bg-transparent hover:bg-teal text-teal font-semibold hover:text-white py-2 px-4 border border-teal hover:border-transparent rounded inline-flex items-center"
+                  >
+                    <img
+                      class="h-auto max-w-[25px] mr-1 grayscale"
+                      alt="github icon"
+                      src="./assets/images/github.png"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://github.com/Avarice03/carnielval-game"
+                    >
+                      View in Github
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <!-- RecipeEZ -->
+          <div
+            class="lg:flex lg:justify-between lg:items-center lg:h-full gap-12 lg:gap-10 w-5/6 mx-auto"
+          >
+            <!-- Image -->
+            <div class="flex justify-center basis-3/5">
+              <img
+                class="w-full max-w-[400px] md:max-w-[1000px] border-2 border-cyan-500"
+                alt="recipeez app preview"
+                src="./assets/images/recipeez.png"
+              />
+            </div>
+            <!-- Content -->
+            <div class="basis-2/5 flex justify-start mt-8">
+              <div class="w-full lg:w-4/5">
+                <p
+                  class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat text-center lg:text-start"
+                >
+                  RecipeEZ
+                </p>
+                <p
+                  class="mt-5 mb-7 text-sm text-center lg:text-start text-grey"
+                >
+                  The RecipeEZ (Recipe made Easy) app is a digital cookbook that
+                  offers a wide range of recipes from various cuisines. The app
+                  allows users to search for recipes by its main ingredient (e.g
+                  beef, chicken, pork, seafood, vegetarian, others), or its
+                  cuisine (e.g Filipino, Japanese, Chinese, Western, etc.),
+                  making it easy to find a meal that fits their needs. With
+                  easy-to-follow instructions, detailed ingredient lists, and
+                  helpful tips, the app enables users to cook delicious meals
+                  with ease and confidence.
+                </p>
+                <!-- Dev tools badges -->
+                <div
+                  class="flex justify-center lg:justify-start my-5 gap-1 flex-wrap"
+                >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >React</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >Bootstrap</span
+                  >
+                </div>
+                <!-- Action Buttons -->
+                <div class="flex justify-center lg:justify-start gap-3">
+                  <button
+                    class="bg-teal hover:bg-transparent text-white font-semibold hover:text-teal py-2 px-4 border border-teal hover:border-teal rounded inline-flex items-center"
+                  >
+                    <img
+                      class="h-auto max-w-[25px] mr-1 grayscale"
+                      alt="external link icon"
+                      src="./assets/images/external-link.png"
+                    />
+                    <a target="_blank" href="https://recipeez-v1.onrender.com">
+                      View Website
+                    </a>
+                  </button>
+                  <button
+                    class="bg-transparent hover:bg-teal text-teal font-semibold hover:text-white py-2 px-4 border border-teal hover:border-transparent rounded inline-flex items-center"
+                  >
+                    <img
+                      class="h-auto max-w-[25px] mr-1 grayscale"
+                      alt="github icon"
+                      src="./assets/images/github.png"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://github.com/Avarice03/RecipeEZ"
+                    >
+                      View in Github
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <!-- RecipeEZ -->
+          <div
+            class="lg:flex lg:justify-between lg:items-center lg:h-full gap-12 lg:gap-10 w-5/6 mx-auto"
+          >
+            <!-- Image -->
+            <div class="flex justify-center basis-3/5">
+              <img
+                class="w-full max-w-[400px] md:max-w-[1000px] border-2 border-cyan-500"
+                alt="recipeez app v2 preview"
+                src="./assets/images/recipeez.png"
+              />
+            </div>
+            <!-- Content -->
+            <div class="basis-2/5 flex justify-start mt-8">
+              <div class="w-full lg:w-4/5">
+                <p
+                  class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat text-center lg:text-start"
+                >
+                  RecipeEZ v2
+                </p>
+                <p
+                  class="mt-5 mb-7 text-sm text-center lg:text-start text-grey"
+                >
+                  The RecipeEz (Recipe made Easy) app is a comprehensive digital
+                  cookbook that offers a wide range of recipes from various
+                  cuisines. With its user-friendly interface and powerful
+                  features, the app simplifies the cooking experience for both
+                  novice and experienced chefs. Users can search for recipes by
+                  main ingredient or cuisine, browse a collection of public
+                  recipes, create their own personalized recipe collection, set
+                  cooking timers, and even share their favorite recipes with
+                  others. Whether you're a passionate home cook or simply
+                  looking for culinary inspiration, RecipeEz is your go-to app
+                  for delicious and hassle-free cooking.
+                </p>
+                <!-- Dev tools badges -->
+                <div
+                  class="flex justify-center lg:justify-start my-5 gap-1 flex-wrap"
+                >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >React</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >NodeJS</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >ExpressJS</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >MongoDB</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >Bootstrap</span
+                  >
+                </div>
+                <!-- Action Buttons -->
+                <div class="flex justify-center lg:justify-start gap-3">
+                  <button
+                    class="bg-teal hover:bg-transparent text-white font-semibold hover:text-teal py-2 px-4 border border-teal hover:border-teal rounded inline-flex items-center"
+                  >
+                    <img
+                      class="h-auto max-w-[25px] mr-1 grayscale"
+                      alt="external link icon"
+                      src="./assets/images/external-link.png"
+                    />
+                    <a target="_blank" href="https://recipeez.onrender.com">
+                      View Website
+                    </a>
+                  </button>
+                  <button
+                    class="bg-transparent hover:bg-teal text-teal font-semibold hover:text-white py-2 px-4 border border-teal hover:border-transparent rounded inline-flex items-center"
+                  >
+                    <img
+                      class="h-auto max-w-[25px] mr-1 grayscale"
+                      alt="github icon"
+                      src="./assets/images/github.png"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://github.com/Avarice03/p4-node-app"
+                    >
+                      View in Github
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <!-- RecipeEZ -->
+          <div
+            class="lg:flex lg:justify-between lg:items-center lg:h-full gap-12 lg:gap-10 w-5/6 mx-auto"
+          >
+            <!-- Image -->
+            <div class="flex justify-center basis-3/5">
+              <img
+                class="w-full max-w-[400px] md:max-w-[1000px] border-2 border-cyan-500"
+                alt="Aboitiz Scholars Central app preview"
+                src="./assets/images/aboitiz-scholars-central.png"
+              />
+            </div>
+            <!-- Content -->
+            <div class="basis-2/5 flex justify-start mt-8">
+              <div class="w-full lg:w-4/5">
+                <p
+                  class="text-3xl sm:text-3xl lg:text-2xl 2xl:text-4xl font-montserrat text-center lg:text-start"
+                >
+                  Aboitiz Scholars Central
+                </p>
+                <p
+                  class="mt-5 mb-7 text-sm text-center lg:text-start text-grey"
+                >
+                  The Aboitiz Scholars Central app is a scholarship dashboard
+                  that aims to be the central hub for everything related to
+                  scholarships. Its dashboard will provide information on the
+                  total number of supported scholars, their scholarship status,
+                  the number of graduates, their employment status, grades, and
+                  demographics like age, gender, and location. With its name,
+                  the app emphasizes that it will serve as the primary source of
+                  scholarship-related resources and information, including a
+                  comprehensive database of scholars' data.
+                </p>
+                <!-- Dev tools badges -->
+                <div
+                  class="flex justify-center lg:justify-start my-5 gap-1 flex-wrap"
+                >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >React</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >NodeJS</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >ExpressJS</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >MongoDB</span
+                  >
+                  <span
+                    class="bg-cyan-700 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-700 dark:text-white"
+                    >Material UI</span
+                  >
+                </div>
+                <!-- Action Buttons -->
+                <div class="flex justify-center lg:justify-start gap-3">
+                  <button
+                    class="bg-teal hover:bg-transparent text-white font-semibold hover:text-teal py-2 px-4 border border-teal hover:border-teal rounded inline-flex items-center"
+                  >
+                    <img
+                      class="h-auto max-w-[25px] mr-1 grayscale"
+                      alt="external link icon"
+                      src="./assets/images/external-link.png"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://aboitiz-scholars-central.onrender.com"
+                    >
+                      View Website
+                    </a>
+                  </button>
+                  <button
+                    class="bg-transparent hover:bg-teal text-teal font-semibold hover:text-white py-2 px-4 border border-teal hover:border-transparent rounded inline-flex items-center"
+                  >
+                    <img
+                      class="h-auto max-w-[25px] mr-1 grayscale"
+                      alt="github icon"
+                      src="./assets/images/github.png"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://github.com/team-project-aljo-niel/Aboitiz-Scholars-Central"
+                    >
+                      View in Github
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="section contact" data-anchor="contactSection">
-        <div class="contact-container">
-          <h1>Contact Me</h1>
+      <div class="section contact" data-anchor="contact">
+        <div
+          class="md:flex md:justify-between md:items-center md:h-full gap-12 md:gap-0 w-5/6 mx-auto"
+        >
+          <!-- Content -->
+          <div class="basis-2/5 flex justify-start mt-8">
+            <div class="w-full md:w-2/5">
+              <p
+                class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat text-center md:text-start text-black font-bold"
+              >
+                Contact Me
+              </p>
+              <p class="mt-5 mb-7 text-sm text-center md:text-start text-black">
+                Hi, I'm Niel, a full-stack web developer with passion in
+                building user-friendly web applications. I am skilled in
+                developing front end UI and backend systems with modern
+                technologies such as React, Express.js, Node.js, and MongoDB. I
+                am motivated to take on new challenges and build high quality
+                web applications that will deliver exceptional user experiences.
+              </p>
+
+              <!-- Contact Icons -->
+              <div class="flex justify-center md:justify-start my-5 gap-5">
+                <a
+                  class="grayscale hover:grayscale-0 transition duration-500"
+                  href="mailto:dmendegorin@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img alt="email icon" src="./assets/images/gmail.png" />
+                </a>
+                <a
+                  class="grayscale hover:grayscale-0 transition duration-500"
+                  href="https://www.linkedin.com/in/daniel-edison-mendegorin-5b13a8247/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img alt="linkedin icon" src="./assets/images/linkedin.png" />
+                </a>
+                <a
+                  class="grayscale hover:grayscale-0 transition duration-500"
+                  href="https://github.com/Avarice03"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img alt="github icon" src="./assets/images/github.png" />
+                </a>
+                <a
+                  class="grayscale hover:grayscale-0 transition duration-500"
+                  href="https://gitlab.com/dmendegorin"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img alt="gitlab icon" src="./assets/images/gitlab.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Forms -->
+          <div class="md:order-2 flex justify-center basis-3/5">
+
+          </div>
         </div>
       </div>
       <div
         class="section footer global-footer-container fp-auto-height"
-        data-anchor="footerSection"
+        data-anchor="footer"
       >
         <div class="flex justify-center md:justify-center my-5 gap-5">
           <a
@@ -471,7 +1043,7 @@
         </div>
       </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="./assets/scripts/fullpage.js"></script>
     <script src="./assets/scripts/typewriter.js"></script>
     <script src="./assets/scripts/app.js"></script>
