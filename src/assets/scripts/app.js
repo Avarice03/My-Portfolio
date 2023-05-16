@@ -13,6 +13,7 @@ new fullpage("#fullpage", {
 
 const menuButton = document.querySelector(".menuButton");
 const submitBtn = document.querySelector("#submitBtn");
+const formError = document.getElementById("formError");
 
 menuButton.addEventListener("click", Menu);
 submitBtn.addEventListener("click", sendEmail);
@@ -37,9 +38,11 @@ function Menu(e) {
 function validateEmail(email) {
   if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(email)) {
     alert("Email sent successfully");
+    formError.textContent = "Email sent successfully"
     return true;
   } else {
     alert("You have entered an invalid email address!");
+    formError.textContent = "You have entered an invalid email address!"
     return false;
   }
 }
@@ -58,10 +61,10 @@ form.addEventListener("submit", (e) => {
   if (validateEmail(email)) {
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then((response) => {
-        console.log("Success!", response);
         nameInput.value = "";
         emailInput.value = "";
         messageInput.value = "";
+        formError.textContent = "";
       })
       .catch((error) => console.error("Error!", error.message));
     name.textContent = "";
