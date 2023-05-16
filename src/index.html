@@ -128,7 +128,7 @@
                   href=""
                   class="typewrite"
                   data-period="2000"
-                  data-type='[ "Daniel Mendegorin", "Developer", "Problem Solver", "Passionate" ]'
+                  data-type='[ "Daniel Mendegorin", "Developer", "Problem Solver", "Resourceful" ]'
                 >
                   <span class="wrap"></span>
                 </a>
@@ -478,7 +478,7 @@
             <div class="basis-2/5 flex justify-start mt-8">
               <div class="w-full lg:w-4/5">
                 <p
-                  class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat text-center lg:text-start"
+                  class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat font-bold text-center lg:text-start"
                 >
                   Carnielval
                 </p>
@@ -564,7 +564,7 @@
             <div class="basis-2/5 flex justify-start mt-8">
               <div class="w-full lg:w-4/5">
                 <p
-                  class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat text-center lg:text-start"
+                  class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat font-bold text-center lg:text-start"
                 >
                   RecipeEZ
                 </p>
@@ -638,14 +638,14 @@
               <img
                 class="w-full max-w-[400px] md:max-w-[1000px] border-2 border-cyan-500"
                 alt="recipeez app v2 preview"
-                src="./assets/images/recipeez.png"
+                src="./assets/images/recipeez-2.png"
               />
             </div>
             <!-- Content -->
             <div class="basis-2/5 flex justify-start mt-8">
               <div class="w-full lg:w-4/5">
                 <p
-                  class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat text-center lg:text-start"
+                  class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat font-bold text-center lg:text-start"
                 >
                   RecipeEZ v2
                 </p>
@@ -740,7 +740,7 @@
             <div class="basis-2/5 flex justify-start mt-8">
               <div class="w-full lg:w-4/5">
                 <p
-                  class="text-3xl sm:text-3xl lg:text-2xl 2xl:text-4xl font-montserrat text-center lg:text-start"
+                  class="text-3xl sm:text-3xl lg:text-2xl 2xl:text-4xl font-montserrat font-bold text-center lg:text-start"
                 >
                   Aboitiz Scholars Central
                 </p>
@@ -825,21 +825,39 @@
           class="md:flex md:justify-between md:items-center md:h-full gap-12 md:gap-0 w-5/6 mx-auto"
         >
           <!-- Content -->
-          <div class="basis-2/5 flex justify-start mt-8">
-            <div class="w-full md:w-2/5">
+          <div class="basis-2/5 flex justify-start mt-8 md:mt-0">
+            <div class="w-full">
               <p
-                class="text-3xl sm:text-4xl 2xl:text-5xl font-montserrat text-center md:text-start text-black font-bold"
+                class="text-5xl 2xl:text-6xl font-montserrat text-center md:text-start text-black font-bold"
               >
                 Contact Me
               </p>
-              <p class="mt-5 mb-7 text-sm text-center md:text-start text-black">
-                Hi, I'm Niel, a full-stack web developer with passion in
-                building user-friendly web applications. I am skilled in
-                developing front end UI and backend systems with modern
-                technologies such as React, Express.js, Node.js, and MongoDB. I
-                am motivated to take on new challenges and build high quality
-                web applications that will deliver exceptional user experiences.
-              </p>
+              <a
+                class="mt-5 mb-7 text-xl text-center md:text-start text-black flex justify-center md:justify-start items-center"
+                href="mailto:dmendegorin@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  class="h-auto max-w-[40px] mr-2 fill-teal"
+                  alt="send icon"
+                  src="./assets/images/send.png"
+                />
+                dmendegorin@gmail.com
+              </a>
+              <a
+                class="mt-5 mb-7 text-xl text-center md:text-start text-black flex justify-center md:justify-start items-center"
+                href="sms:639175968907"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  class="h-auto max-w-[40px] mr-2 fill-teal"
+                  alt="phone icon"
+                  src="./assets/images/phone.png"
+                />
+                09175968907
+              </a>
 
               <!-- Contact Icons -->
               <div class="flex justify-center md:justify-start my-5 gap-5">
@@ -880,7 +898,39 @@
           </div>
           <!-- Forms -->
           <div class="md:order-2 flex justify-center basis-3/5">
-
+            <form id="submit-to-google-sheet" class="flex flex-col w-5/6 gap-5 justify-center items-center">
+              <input
+                class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-3 py-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+                type="text"
+                id="nameInput"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-3 py-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+                type="text"
+                id="emailInput"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-3 py-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+                name="Message"
+                id="messageInput"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                id="submitBtn"
+                class="w-full max-w-[100px] bg-teal hover:bg-transparent text-white font-semibold hover:text-teal py-2 px-6 border border-teal hover:border-teal rounded inline-flex items-center"
+              >
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -888,48 +938,25 @@
         class="section footer global-footer-container fp-auto-height"
         data-anchor="footer"
       >
-        <div class="flex justify-center md:justify-center my-5 gap-5">
-          <a
-            class="grayscale hover:grayscale-0 transition duration-500"
-            href="mailto:dmendegorin@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img alt="email icon" src="./assets/images/gmail.png" />
-          </a>
-          <a
-            class="grayscale hover:grayscale-0 transition duration-500"
-            href="https://www.linkedin.com/in/daniel-edison-mendegorin-5b13a8247/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img alt="linkedin icon" src="./assets/images/linkedin.png" />
-          </a>
-          <a
-            class="grayscale hover:grayscale-0 transition duration-500"
-            href="https://github.com/Avarice03"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img alt="github icon" src="./assets/images/github.png" />
-          </a>
-          <a
-            class="grayscale hover:grayscale-0 transition duration-500"
-            href="https://gitlab.com/dmendegorin"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img alt="gitlab icon" src="./assets/images/gitlab.png" />
-          </a>
-        </div>
-
-        <div class="flex justify-center">
-          <div class="h-0.5 w-4/5 lg:w-2/5 bg-teal"></div>
-        </div>
         <div class="flex justify-center mt-5 mb-5">
           <p>© 2023 Daniel Mendegorin All Rights Reserved</p>
         </div>
+        <div class="flex justify-center">
+          <div class="h-0.5 w-4/5 lg:w-2/5 bg-teal mb-5"></div>
+        </div>
         <div class="references flex flex-wrap justify-center">
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/CK3uLqrsizUG/send"
+            >send, &nbsp;</a
+          >
+          <a
+            class="text-sm text-muted"
+            target="_blank"
+            href="https://icons8.com/icon/WV326xpsBMyb/phone"
+            >Phone, &nbsp;</a
+          >
           <a
             class="text-sm text-muted"
             target="_blank"
