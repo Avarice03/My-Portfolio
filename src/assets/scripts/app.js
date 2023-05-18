@@ -38,11 +38,11 @@ function Menu(e) {
 function validateEmail(email) {
   if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(email)) {
     alert("Email sent successfully");
-    formError.textContent = "Email sent successfully"
+    formError.textContent = "Email sent successfully";
     return true;
   } else {
     alert("You have entered an invalid email address!");
-    formError.textContent = "You have entered an invalid email address!"
+    formError.textContent = "You have entered an invalid email address!";
     return false;
   }
 }
@@ -70,3 +70,16 @@ form.addEventListener("submit", (e) => {
     name.textContent = "";
   }
 });
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-skills");
+    } else {
+      entry.target.classList.remove("show-skills");
+    }
+  });
+});
+
+const hiddenSkills = document.querySelectorAll(".hidden-skills");
+hiddenSkills.forEach((el) => observer.observe(el));

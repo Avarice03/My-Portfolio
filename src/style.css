@@ -44,6 +44,46 @@ body {
   padding: 40px;
 }
 
+/* Skills CSS */
+.hidden-skills {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.show-skills {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.row-skills:nth-child(2){
+  transition-delay: 200ms;
+}
+
+.row-skills:nth-child(3){
+  transition-delay: 400ms;
+}
+
+.row-skills:nth-child(4){
+  transition-delay: 600ms;
+}
+
+.row-skills:nth-child(5){
+  transition-delay: 800ms;
+}
+
+.row-skills:nth-child(6){
+  transition-delay: 1000ms;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden-skills {
+    transition: none;
+  }
+}
+
 /* Projects Title CSS */
 .center {
   position: absolute;
