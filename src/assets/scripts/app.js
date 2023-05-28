@@ -9,6 +9,7 @@ new fullpage("#fullpage", {
   slidesNavPosition: "bottom",
   responsiveWidth: 1100,
   scrollOverflow: true,
+  licenseKey: "gplv3-license",
 });
 
 const menuButton = document.querySelector(".menuButton");
