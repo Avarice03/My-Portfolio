@@ -69,26 +69,64 @@ html.fp-enabled,
   left: 15px;
 }
 .fp-next {
-  right: 15px;
+  right: 50px;
 }
 .fp-arrow {
   width: 0;
   height: 0;
-  border-style: none;
+  /* border-style: none; */
 }
 .fp-arrow.fp-prev {
-  /* border-width: 38.5px 34px 38.5px 0;
-  border-color: transparent #000 transparent transparent; */
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #ffffff transparent transparent;
+  /* background-image: url("./assets/images/left-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 15;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer; */
 }
 .fp-arrow.fp-next {
-  /* border-width: 38.5px 0 38.5px 34px;
-  border-color: transparent transparent transparent #000; */
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #ffffff;
+  /* background-image: url("./assets/images/right-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  right: 15;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer; */
 }
 
-@media only screen and (min-width: 320px) and (max-width: 900px) {
-  .fp-arrow.fp-prev,
+@media screen and (max-width: 1100px) {
+  .fp-arrow.fp-prev {
+    border-width: 28.5px 24px 28.5px 0;
+  }
   .fp-arrow.fp-next {
-    background-image: none;
+    border-width: 28.5px 0 28.5px 24px;
+  }
+  .fp-next {
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fp-arrow.fp-prev {
+    border-width: 20.5px 16px 20.5px 0;
+  }
+  .fp-arrow.fp-next {
+    border-width: 20.5px 0 20.5px 16px;
+  }
+  .fp-next {
+    right: 10px;
+  }
+  .fp-prev {
+    left: 10px;
   }
 }
 
